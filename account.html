@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./utils/favicon.png">
+    <script src="https://kit.fontawesome.com/9c00960078.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../utils/logo.png" id="logo">
+        </div>
+
+        <div class="title">
+            <h1>Crochet Cozy</h1>
+        </div>
+
+        <div class="pages">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="icons">
+            <i class="fa fa-regular fa-user"></i>
+            <i class="fas fa-solid fa-cart-plus"></i>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="register">
+            <div class="split-button">
+                <button class="toggle-button register-button left-half active" onclick="toggleForm('register')">Register</button>
+                <button class="toggle-button login-button right-half" onclick="toggleForm('login')">Login</button>
+            </div>
+
+            <div class="info">
+                <div id="name-form">
+                    <i class="fa fa-regular fa-user"  class="input-icons"></i>
+                    <input type="text" id="name-input" name="Name" placeholder="Name" required>
+                </div>
+                <div id="email-form">
+                    <i class="fa fa-light fa-envelope"  class="input-icons"></i>
+                    <input type="text" id="email-input" name="Email" placeholder="Email" required>
+                </div>
+                <div id="psw-form">
+                    <i class="fa fa-light fa-unlock"  class="input-icons"></i>
+                    <input type="password" id="psw-input" name="Password" placeholder="Password" required>
+                </div>
+                <div id="re-psw-form">
+                    <i class="fa fa-light fa-lock"  class="input-icons"></i>
+                    <input type="password" id="re-psw-input" name="Confirm-Password" placeholder="Confirm password"
+                        required>
+                </div>
+            </div>
+
+ 
+            <button class="dark-bttn" id="register-button">Join us</button>
+        </section>
+
+        <section class="login hidden">
+            <div class="split-button">
+                <button class="toggle-button register-button left-half" onclick="toggleForm('register')">Register</button>
+                <button class="toggle-button login-button right-half active" onclick="toggleForm('login')">Login</button>
+            </div>
+
+            <div class="info">
+                <div id="email-form">
+                    <i class="fa fa-light fa-envelope" class="input-icons"></i>
+                    <input type="text" id="email-input" name="Email" placeholder="Email" required>
+                </div>
+                <div id="psw-form">
+                    <i class="fa fa-light fa-lock"  class="input-icons"></i>
+                    <input type="password" id="psw-input" name="Password" placeholder="Password" required>
+                </div>
+            </div>
+ 
+            <button class="dark-bttn" id="login-button">Enter your account</button>
+        </section>
+    </main>
+
+    <script src="./register-login.js"></script>
+
+</body>
+
+</html>

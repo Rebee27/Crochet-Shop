@@ -1,0 +1,11 @@
+header gradient:
+#ffffff, #ea68b4
+
+content:
+#f2b2d7  --> inchis
+#FEE9E1  --> deschis
+
+text:
+#333
+
+
